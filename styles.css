@@ -1,0 +1,17 @@
+@font-face {
+  font-family: ygoItalics;
+  src: url('fonts/yugioh_itc_stone_serif_lt_italic-webfont.woff2');
+  src: url('fonts/yugioh_itc_stone_serif_lt_italic-webfont.woff')
+}
+@font-face {
+  font-family: ygoFont;
+  src: url('fonts/yugioh_matrix_book-webfont.woff2');
+  src: url('fonts/yugioh_matrix_book-webfont.woff')
+}
+
+h1 {
+  background-color: black;
+  opacity: .3;
+  color: whitesmoke;
+  font-family: 'ygoFont', Arial, Helvetica, sans-serif;
+}
