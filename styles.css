@@ -9,28 +9,48 @@
   src: url('fonts/yugioh_matrix_book-webfont.woff')
 }
 
-h1 {
-  background-color: black;
-  opacity: .3;
-  color: whitesmoke;
-  font-family: 'ygoFont', Arial, Helvetica, sans-serif;
-}
-
 .container {
   display: flex;
 }
 
-#sign-up-form {
-
+.left-column-container {
+  position: relative;
+  width: auto;
+  height: auto;
+  overflow: hidden;
 }
 
-#obelisk-image {
-  max-width: 100%;
-  max-height: auto;
+.right-column-container {
+  padding: 20px;
+  background-color:rgb(248, 244, 244)
+}
+
+.background-image {
+  width: 100%;
+  height: 100vw;
+  object-fit: cover;
+}
+
+#main-header {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  color: whitesmoke;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'ygoFont', Arial, Helvetica, sans-serif;
+  font-size: 5vw;
 }
 
 #user-info {
   display: flex;
+  background-color: white;
+  border-left: 0;
+  border-right: 0;
 }
 
 .info-column {
@@ -38,4 +58,18 @@ h1 {
   flex-direction: column;
   margin: 1.5em;
   line-height: 1.5em;
+}
+
+.right-column-bottom {
+  margin-top: 25px
+}
+
+#submit-button {
+  background-color: rgb(70, 143, 70);
+  padding: 3px 25px;
+  border-radius: .25em;
+  border-color:rgb(70, 143, 70);
+  color: white;
+  font-size: 1em;
+
 }
