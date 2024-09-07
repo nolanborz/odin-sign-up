@@ -19,23 +19,28 @@
 
     <form action="" method="post">
       <h2>It's Time to Duel!</h2>
-      <div>
-        <label for="user-first-name">FIRST NAME</label>
-        <input type="text" id="user-first-name" name="user-first-name" placeholder="Joey">
-        
-        <label for="user-last-name">LAST-NAME</label>
-        <input type="text" id="user-last-name" name="user-last-name" placeholder="Wheeler">
+      <div id="user-info">
+        <div class="info-column">
+          <label for="user-first-name">FIRST NAME</label>
+          <input type="text" id="user-first-name" name="user-first-name" placeholder="Joey">
+          <label for="user-email">EMAIL</label>
+          <input type="email" id="user-email" name="user-email">
+          <label for="user-password">PASSWORD</label>
+          <input type="password" name="user-password" id="user-password">
+        </div>
+        <div class="info-column">
+          <label for="user-last-name">LAST-NAME</label>
+          <input type="text" id="user-last-name" name="user-last-name" placeholder="Wheeler">
+          <label for="user-phone-number">PHONE NUMBER</label>
+          <input type="number" id="user-phone-number" name="user-phone-number">
+          <label for="user-confirm-password">CONFIRM PASSWORD</label>
+          <input type="password" name="user-confirm-password" id="user-confirm-password">
+        </div>
       </div>
       <div>
-        <label for="user-email">EMAIL</label>
-        <input type="email" id="user-email" name="user-email">
-
-        <label for="user-phone-number">PHONE NUMBER</label>
-        <input type="number" id="user-phone-number" name="user-phone-number">
+        <button id="submit-button">Submit</button>
+        <p>Already have an account? Log in</p>
       </div>
-      <p>First Name, Last Name, Email, Phone number, Password, Confirm Password</p>
-      <p>Create account button</p>
-      <p>Already have an account? Log in</p>
       
     </form>
   </div>

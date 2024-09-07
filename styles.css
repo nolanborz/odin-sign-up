@@ -28,3 +28,14 @@ h1 {
   max-width: 100%;
   max-height: auto;
 }
+
+#user-info {
+  display: flex;
+}
+
+.info-column {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em;
+  line-height: 1.5em;
+}
