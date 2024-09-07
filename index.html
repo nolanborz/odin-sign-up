@@ -19,35 +19,41 @@
 
     <form action="" method="post">
       <h2>It's Time to Duel!</h2>
-      <div id="user-info">
-        <div class="info-column">
-          <div class="beaner">
+
+      <div class="user-info-column">
+
+        <fieldset class="info-row" id="first-row">
+          <div class="user-input">
             <label for="user-first-name">FIRST NAME</label>
             <input type="text" id="user-first-name" name="user-first-name" placeholder="Joey">
           </div>
-          <div class="beaner">
+          <div class="user-input">
+            <label for="user-last-name">LAST NAME</label>
+            <input type="text" id="user-last-name" name="user-last-name" placeholder="Wheeler">
+          </div>
+        </fieldset>
+        
+        <fieldset class="info-row">
+          <div class="user-input">
             <label for="user-email">EMAIL</label>
             <input type="email" id="user-email" name="user-email" placeholder="you@example.com">
           </div>
-          <div class="beaner">
-            <label for="user-password">PASSWORD</label>
-            <input type="password" name="user-password" id="user-password">
-          </div>
-        </div>
-        <div class="info-column">
-          <div class="beaner">
-            <label for="user-last-name">LAST-NAME</label>
-            <input type="text" id="user-last-name" name="user-last-name" placeholder="Wheeler">
-          </div>
-          <div class="beaner">
+          <div class="user-input">
             <label for="user-phone-number">PHONE NUMBER</label>
             <input type="number" id="user-phone-number" name="user-phone-number">
           </div>
-          <div class="beaner">
+        </fieldset>
+
+        <fieldset class="info-row">
+          <div class="user-input">
+            <label for="user-password">PASSWORD</label>
+            <input type="password" name="user-password" id="user-password">
+          </div>
+          <div class="user-input">
             <label for="user-confirm-password">CONFIRM PASSWORD</label>
             <input type="password" name="user-confirm-password" id="user-confirm-password">
           </div>
-        </div>
+        </fieldset>
       </div>
 
       <div class="right-column-bottom">

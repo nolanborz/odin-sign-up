@@ -56,7 +56,7 @@
   font-size: 5vw;
 }
 
-#user-info {
+.user-info-column {
   display: flex;
   background-color: white;
   border-left: 0;
@@ -86,9 +86,45 @@
   color: white;
   font-size: 1em;
 }
-.beaner {
+.user-info-column {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: start;
+  background-color: white;
+}
+
+.info-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-input {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  margin-bottom: 1.5em;
+  /*width: calc(50% - 10px);*/
+  margin-bottom: 20px;
 }
+
+.user-input:nth-child(odd) {
+  margin-right: 20px;
+}
+
+.user-input label {
+  margin-bottom: 5px;
+}
+
+.user-input input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+fieldset, .user-info-column, .user-input { 
+  border: none;
+}
+
+#first-row {
+  margin-top: 15px;
+}
+
