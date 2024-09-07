@@ -8,6 +8,16 @@
   src: url('fonts/yugioh_matrix_book-webfont.woff2');
   src: url('fonts/yugioh_matrix_book-webfont.woff')
 }
+@font-face {
+  font-family: robotoReg;
+  src: url('fonts/roboto-regular-webfont.woff');
+  src: url('fonts/roboto-regular-webfont.woff')
+}
+@font-face {
+  font-family: robotoBold;
+  src: url(fonts/roboto-medium-webfont.woff2);
+  src: url(fonts/roboto-medium-webfont.woff)
+}
 
 .container {
   display: flex;
@@ -51,13 +61,17 @@
   background-color: white;
   border-left: 0;
   border-right: 0;
+  font-size: 12px;
+  font-family: 'robotoBold', Arial, Helvetica, sans-serif;
+  text-align: left;
+  border-radius: 1em;
 }
 
 .info-column {
   display: flex;
   flex-direction: column;
   margin: 1.5em;
-  line-height: 1.5em;
+  line-height: 2em;
 }
 
 .right-column-bottom {
@@ -71,5 +85,10 @@
   border-color:rgb(70, 143, 70);
   color: white;
   font-size: 1em;
-
+}
+.beaner {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 1.5em;
 }
