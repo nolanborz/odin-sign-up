@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Battle City Bowl</title>
+  <title>The Obelisk Bowl</title>
   <link rel="stylesheet" href="styles.css">
+  
 </head>
 <body class="container">
 
@@ -21,37 +22,36 @@
       <h2>It's Time to Duel!</h2>
 
       <div class="user-info-column">
-
         <fieldset class="info-row" id="first-row">
           <div class="user-input">
-            <label for="user-first-name">FIRST NAME</label>
-            <input type="text" id="user-first-name" name="user-first-name" placeholder="Joey">
+            <label for="user-first-name">*FIRST NAME</label>
+            <input type="text" id="user-first-name" name="user-first-name" placeholder="Joey" required>
           </div>
           <div class="user-input">
-            <label for="user-last-name">LAST NAME</label>
-            <input type="text" id="user-last-name" name="user-last-name" placeholder="Wheeler">
+            <label for="user-last-name">*LAST NAME</label>
+            <input type="text" id="user-last-name" name="user-last-name" placeholder="Wheeler" required>
           </div>
         </fieldset>
         
         <fieldset class="info-row">
           <div class="user-input">
-            <label for="user-email">EMAIL</label>
-            <input type="email" id="user-email" name="user-email" placeholder="you@example.com">
+            <label for="user-email">*EMAIL</label>
+            <input type="email" id="user-email" name="user-email" placeholder="you@example.com" required>
           </div>
           <div class="user-input">
             <label for="user-phone-number">PHONE NUMBER</label>
-            <input type="number" id="user-phone-number" name="user-phone-number">
+            <input type="tel" id="user-phone-number" name="user-phone-number" minlength="10" maxlength="12" placeholder="xxx-xxx-xxxx">
           </div>
         </fieldset>
 
         <fieldset class="info-row">
           <div class="user-input">
-            <label for="user-password">PASSWORD</label>
-            <input type="password" name="user-password" id="user-password">
+            <label for="user-password">*PASSWORD</label>
+            <input type="password" name="user-password" id="user-password" required>
           </div>
           <div class="user-input">
-            <label for="user-confirm-password">CONFIRM PASSWORD</label>
-            <input type="password" name="user-confirm-password" id="user-confirm-password">
+            <label for="user-confirm-password">*CONFIRM PASSWORD</label>
+            <input type="password" name="user-confirm-password" id="user-confirm-password" required>
           </div>
         </fieldset>
       </div>
@@ -63,5 +63,17 @@
       
     </form>
   </div>
+  <script>
+    var password = document.getElementById("user-password") , confirm_password = document.getElementById("user-confirm-password");
+    function validatePassword() {
+      if(password.value != confirm_password.value) {
+        confirm_password.setCustomValidity("Passwords Don't Match");
+      } else {
+        confirm_password.setCustomValidity('');
+      }
+    }
+    password.onchange = validatePassword;
+    confirm_password.onkeyup = validatePassword;
+  </script>
 </body>
 </html>
