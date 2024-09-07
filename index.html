@@ -6,19 +6,38 @@
   <title>Battle City Bowl</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <div>
-    <img src="images/obelisk.jpg" alt="The anime card art of Obelisk the Tormentor">
-  </div>
-  <div>
+<body class="container">
+
+  <div id="left-image-and-caption">
+    <img src="images/obelisk.jpg" id="obelisk-image" alt="The anime card art of Obelisk the Tormentor">
     <h1 class="header">The Obelisk Bowl</h1>
   </div>
-  <p>Test your dueling prowess in the <strong>Obelisk Bowl</strong>. This gauntlet will pit you against the fiercest competitors of the region, where only <em>one</em> will emerge as champion and claim the crown. Sign up <em>now</em> to reserve your spot today.</p>
-  <p>Playmat and dice are included.</p>
 
-  <form action="">
-    <label for="signup">It's Time to Duel!</label>
-    
-  </form>
+  <div id="sign-up-form">
+    <p>Test your dueling prowess in the <strong>Obelisk Bowl</strong>. This gauntlet will pit you against the fiercest competitors of the region, where only <em>one</em> will emerge as champion and claim the crown. Sign up <em>now</em> to reserve your spot today.</p>
+    <p>Playmat and dice are included.</p>
+
+    <form action="" method="post">
+      <h2>It's Time to Duel!</h2>
+      <div>
+        <label for="user-first-name">FIRST NAME</label>
+        <input type="text" id="user-first-name" name="user-first-name" placeholder="Joey">
+        
+        <label for="user-last-name">LAST-NAME</label>
+        <input type="text" id="user-last-name" name="user-last-name" placeholder="Wheeler">
+      </div>
+      <div>
+        <label for="user-email">EMAIL</label>
+        <input type="email" id="user-email" name="user-email">
+
+        <label for="user-phone-number">PHONE NUMBER</label>
+        <input type="number" id="user-phone-number" name="user-phone-number">
+      </div>
+      <p>First Name, Last Name, Email, Phone number, Password, Confirm Password</p>
+      <p>Create account button</p>
+      <p>Already have an account? Log in</p>
+      
+    </form>
+  </div>
 </body>
 </html>
